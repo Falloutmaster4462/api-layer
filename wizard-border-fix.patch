@@ -1,0 +1,40 @@
+diff --git a/api-catalog-ui/frontend/src/components/Wizard/wizard.css b/api-catalog-ui/frontend/src/components/Wizard/wizard.css
+index 9b54fb4..2310184 100644
+--- a/api-catalog-ui/frontend/src/components/Wizard/wizard.css
++++ b/api-catalog-ui/frontend/src/components/Wizard/wizard.css
+@@ -144,6 +144,35 @@ label.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLab
+     width: 100%;
+ }
+ 
++/* Give the wizard's text input fields a visible border so they're distinguishable
++   from surrounding labels/descriptive text (#4752). Scoped to .wizardFormFields so
++   Select (.formField) and Checkbox inputs, which already look interactive, are untouched. */
++.wizardFormFields .MuiInput-underline {
++    border: 1px solid #ccc;
++    border-radius: 0.1875em;
++    padding: 4px 8px;
++}
++
++.wizardFormFields .MuiInput-underline:before,
++.wizardFormFields .MuiInput-underline:after {
++    border-bottom: none;
++    content: none;
++}
++
++.wizardFormFields .MuiInput-underline.Mui-focused {
++    border-color: #3272d9;
++    box-shadow: 0 0 0 2px rgba(50, 114, 217, 0.2);
++}
++
++.wizardFormFields .MuiInput-underline.Mui-disabled {
++    border-color: #e0e0e0;
++    background-color: #f5f5f5;
++}
++
++.wizardFormFields .MuiInput-underline.Mui-error {
++    border-color: #d32f2f;
++}
++
+ #yaml-upload-container {
+     display: flex;
+     align-items: center;

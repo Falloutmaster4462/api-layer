@@ -1,0 +1,204 @@
+/*
+ * This program and the accompanying materials are made available under the terms of the
+ * Eclipse Public License v2.0 which accompanies this distribution, and is available at
+ * https://www.eclipse.org/legal/epl-v20.html
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ *
+ * Copyright Contributors to the Zowe Project.
+ */
+
+.wizardForm {
+    padding: 0 12px;
+}
+
+.wizardForm .entry {
+    margin-bottom: 24px;
+}
+
+.selector {
+    max-width: 300px;
+}
+
+#wizard-navigation {
+    min-height: 20em;
+    margin-left: auto;
+}
+
+#wizard-navigation > div {
+    margin-left: -20px;
+    max-height: 21em;
+}
+
+.yamlContainer {
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.yamlContainer code {
+    white-space: pre-wrap;
+    font-size: 0.8em;
+}
+
+#copyButtonContainer {
+    position: absolute;
+    right: 40px;
+}
+
+.categoryConfigDivider {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wizardForm label {
+    font-weight: normal;
+}
+
+label.wCheckBox {
+    font-weight: 600;
+}
+
+label.wCheckBox span:last-child {
+    color: #58606e;
+}
+.wizardTooltip {
+    width: 100%;
+}
+.wizardTooltip > span {
+    width: 100%;
+}
+.wizardCategoryInfo {
+    white-space: pre-wrap;
+}
+
+.readyTab {
+    margin-right: 10px;
+    font-weight: 800;
+}
+
+#wizard-done-button:disabled {
+    cursor: none;
+    color: rgb(175, 186, 204);
+    outline: currentcolor none 0px;
+    background-color: rgb(235, 239, 245);
+    border-color: transparent;
+    border-radius: 0.1875em;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.entry span.MuiTypography-root {
+    color: #58606e;
+    font-size: 0.875em;
+    font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.MuiInputLabel-formControl {
+    position: relative;
+}
+
+.MuiTab-wrapper {
+    flex-direction: row;
+    justify-content: end;
+    max-width: 100%;
+    font-size: 0.875em;
+    text-align: right;
+}
+
+.MuiTab-labelIcon {
+    min-height: 0;
+    height: 50px;
+}
+
+MuiTab-textColorInherit {
+    height: 50px;
+}
+
+.MuiTabs-vertical {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    font-size: 0.875em;
+}
+
+.MuiFormControlLabel-labelPlacementBottom {
+    flex-direction: row;
+}
+
+.MuiFormControl-root {
+    display: flex;
+}
+
+label.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink {
+    font-weight: bold;
+}
+
+.MuiFormControl-root.formField {
+    width: 100%;
+}
+
+/* Give the wizard's text input fields a visible border so they're distinguishable
+   from surrounding labels/descriptive text (#4752). Scoped to .wizardFormFields so
+   Select (.formField) and Checkbox inputs, which already look interactive, are untouched. */
+.wizardFormFields .MuiInput-underline {
+    border: 1px solid #ccc;
+    border-radius: 0.1875em;
+    padding: 4px 8px;
+}
+
+.wizardFormFields .MuiInput-underline:before,
+.wizardFormFields .MuiInput-underline:after {
+    border-bottom: none;
+    content: none;
+}
+
+.wizardFormFields .MuiInput-underline.Mui-focused {
+    border-color: #3272d9;
+    box-shadow: 0 0 0 2px rgba(50, 114, 217, 0.2);
+}
+
+.wizardFormFields .MuiInput-underline.Mui-disabled {
+    border-color: #e0e0e0;
+    background-color: #f5f5f5;
+}
+
+.wizardFormFields .MuiInput-underline.Mui-error {
+    border-color: #d32f2f;
+}
+
+#yaml-upload-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4em;
+}
+
+#yaml-browser {
+    display: none;
+}
+
+#yaml-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8em;
+    height: 2em;
+    cursor: pointer;
+    color: #3272d9;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 200;
+    border: 1px solid #ccc;
+    border-radius: 0.1875em;
+    margin-right: 0.5em;
+}
+
+#yaml-file-text {
+    color: rgba(0, 0, 0, 0.85);
+}
